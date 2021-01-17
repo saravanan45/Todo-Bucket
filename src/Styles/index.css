@@ -1,0 +1,206 @@
+.container {
+  margin-top: 40px;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.header {
+  font-size: x-large;
+  text-align: center;
+  font-weight: 500;
+  font-family: ui-sans-serif;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.table {
+  border: 1px solid lightgray;
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.table-row {
+  border: 2px solid black;
+}
+td {
+  height: 50px;
+  border-bottom: 1px solid lightgray;
+}
+.add-todo-input {
+  outline: none;
+  border: none;
+  font-size: large;
+  font-family: cursive;
+  width: -webkit-fill-available;
+  padding-left: 50px;
+}
+
+.add-todo-input::-webkit-input-placeholder {
+  color: black;
+  opacity: 0.2;
+}
+
+.radio-input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 20px;
+}
+label::before {
+  content: "";
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  border: 1px solid lightgray;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+input:checked + label::before {
+  content: "✔";
+  line-height: 15px;
+  font-size: larger;
+}
+
+input:checked ~ .todo-message {
+  text-decoration: line-through;
+}
+
+.todo-message {
+  font-size: larger;
+  font-family: ui-sans-serif;
+  font-weight: 500;
+  outline: none;
+}
+
+.delete-todo {
+  float: right;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.notify-container {
+  margin-top: 20px;
+}
+.notify-remain {
+  text-align: center;
+  font-family: "FontAwesome";
+}
+
+.home-container {
+  width: 40%;
+  height: 40%;
+  border: 1px solid darkgray;
+  margin: auto;
+  margin-top: 10em;
+  background-color: lightgrey;
+  box-shadow: 5px 5px lightgrey;
+}
+
+.home-header {
+  font-size: x-large;
+  font-family: "FontAwesome";
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.home-body {
+  margin: 20px 0px;
+  display: flex;
+  margin: 20px 0px;
+  justify-content: space-around;
+}
+
+.create-todo-button,
+.existing-todo-button {
+  width: 200px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 3px 3px darkgrey;
+  cursor: pointer;
+}
+
+.create-todo-button {
+  background-color: gray;
+}
+
+.existing-todo-button {
+  background-color: grey;
+}
+
+.form-container {
+  width: 35%;
+  height: 200px;
+  border: 2px solid lightgray;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 10em;
+  background-color: lightgray;
+}
+
+.form-header {
+  font-size: x-large;
+  font-weight: 500;
+  text-align: center;
+  font-family: "FontAwesome";
+  margin-bottom: 25px;
+}
+
+.form-field {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.form-label {
+  font-size: large;
+  margin-right: 15px;
+  font-family: "FontAwesome";
+}
+
+.form-input {
+  width: 250px;
+  height: 20px;
+  padding: 2px 15px;
+}
+
+.category-dropdown {
+  width: 283px;
+  height: 28px;
+  padding: 2px 15px;
+}
+
+.create-button {
+  margin: auto;
+  display: block;
+  width: 150px;
+  height: 30px;
+  margin-top: 25px;
+  border: 1px solid lightgrey;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.new-task {
+  display: flex;
+}
+
+.submit-icon {
+  float: right;
+  display: flex;
+  height: 50px;
+  font-size: medium;
+  align-items: center;
+  cursor: pointer;
+}
+
+.submit-icon-i {
+  margin-left: 5px;
+}
